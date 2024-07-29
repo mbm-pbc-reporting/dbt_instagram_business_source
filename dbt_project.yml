@@ -9,7 +9,7 @@ vars:
   user_history: "{{ source('instagram_business','user_history') }}"
 models:
   instagram_business_source:
-    +schema: stg_instagram_business
+    +schema: instagram_business_stg_dev
     +materialized: table
     tmp:
       +materialized: view
